@@ -1,0 +1,2 @@
+node decrypt.js
+pause

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DIR=`dirname "$(readlink -f "$0")"`
+node "$DIR/decrypt.js"
+if [ "$DIR" != "$PWD" ]; then
+	[ -e www/js/main.js~ ] || cp -v www/js/main.js{,~}
+	cp -vf {"$DIR/",}www/js/main.js
+fi
