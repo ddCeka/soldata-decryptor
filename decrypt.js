@@ -3,8 +3,9 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const acorn = require("./lib/acorn");
-const LZString = require("./lib/lz-string.js");
+const zlib = require("zlib");
+const acorn = require("./acorn");
+const LZString = require("./www/js/libs/lz-string.js");
 
 const FALLBACK_DATA_KEYS = [
 	"8bU5mae0qBokfe91IvVGJhQBWDAnoDV8Hmr59388fw2", // iirc it's up to 0.3.2
